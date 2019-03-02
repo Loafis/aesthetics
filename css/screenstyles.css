@@ -1,0 +1,215 @@
+/* Style sheet created by: Carlos Reyna, 2/14/2019 */
+
+/* Style for body specifies a background color */
+body {
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	background-image: url("../images/background.jpg");
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Styles for Mobile Layout */
+
+/* Style aligns text for article element */ 
+	article h3 {
+			text-align: center;
+	}
+	
+/* Style aligns text for figure element */
+	figure {
+			text-align: center;
+	}
+	
+/* Style specifies color for figcaption element */
+	figcaption {
+			color: #000066;
+	}
+	
+/* Style adds padding to section element */
+	section { 
+		padding: 1em;
+	}
+	
+/* Style adds margin, padding, and background color to article element */
+
+	article { 
+		margin: 1em;
+		padding: 1em;
+		background-color: #ACB7E6;
+	}
+
+/* Style for the container centers the page and specifies the width */
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the header specifies top margin, background color, rounded corners, and center align content */
+header {
+	margin-top: 0.2em;
+	margin-bottom: 0.3em;
+	text-align: center;
+	padding: 0.2em;
+	color: #B57EDC;
+	font-size: 3.25em;
+}
+
+#banner {
+	text-align: center;
+}
+
+/* Style for nav specifies text properties */
+nav {
+	/* font-family: Lucida, "Times New Roman", serif; */
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	margin: 1em;
+}
+
+/* Style specifies padding and margins for unordered list */
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
+nav li {
+	background-color: #B57EDC;
+	list-style-type: none;
+	margin: 0.4em;
+	padding: 0.5em;
+	border-radius: .75em 0 .75em 0;
+}
+
+/* Style changes navigation link text color to white and removes the underline */
+nav li a {
+	color: #A5DC7E;
+	text-decoration: none;
+}
+
+/* Style for the main specifies a block display, text properties, margins, padding, rounded corners, and borders  */
+main {
+	display: block;
+	/* font-family: Georgia, "Times New Roman", sans-serif; */
+	font-size: 1em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border-radius: 1em;
+	background-color: #FFFFFF;
+}
+
+/* Style for the footer specifies font size, text alignment, and top margin */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+	color: #A5DC7E;
+}
+
+/* Style displays the mobile class */
+.mobile {
+	display: inline;
+}
+
+/* Style hides the desktop class*/
+.desktop {
+	display: none;
+}
+
+/* Media query for tablet viewport targets screen size with a minimum width of 481px. */
+
+@media only screen and (min-width: 481px) {
+/*Style for navigation list item specifies a display, float, margins, width, and padding */
+nav li {
+	display: inline;
+	/* float: left; */
+	margin-left: 1%;
+	margin-right: 1%;
+	/* padding-left: 0; */
+	/* padding-right: 0; */
+	width: 18%;
+}
+
+/* Style specifies clear property for the main element */
+main {
+	clear: left;
+}
+
+/* Style specifies to hide the mobile class*/
+.mobile {
+	display: none;
+}
+
+/* Style specifies to display the desktop class*/
+.desktop {
+	display: inline;
+}
+
+}
+
+
+
+/* Media query for desktop viewport targets screens with a minimum width of 942px. */
+
+@media only screen and (min-width: 942px) {
+/* Style specifies width, float, and hieght to section article element */
+	section article {
+			width: 22%;
+			float:left;
+			height: 15em;
+	}
+	
+/* Style specifies a width for container */
+#container {
+	width: 80%;
+}
+
+/* Style specifies padding and margin for unordered list */
+nav ul {
+	margin: 0;
+	padding-left: 0.50%;
+	padding-right: 0.50%;
+}
+
+/* Style specifies a horizontal display for navigation links */
+nav li {
+	border-radius: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding: .75em;
+	width: 20%;
+	white-space: nowrap;
+}
+
+/* Style for navigation links specifies display, padding, and font size */
+nav li a {
+	display: inline-block;
+	padding: 0.7em;
+	font-size: 1.25em;
+}
+
+/* Style specifies border, shadow, margin, and padding for main element*/
+main { 
+	border: none;
+	border-radius: 1em;
+	box-shadow: 1em 1em 1em #331400;
+	margin-top: 1em;
+	overflow: auto;
+}
+
+/* Style rules for pseudo-classes*/
+nav li a:link {
+	color: #FFFFFF;
+}
+
+nav li a:hover {
+	color: #CCFFCC;
+	font-size: 1.5em;
+}
+
+}
